@@ -1,0 +1,5 @@
+{
+    // enable styeled component class names  
+    "plugins": ["babel-plugin-styled-components"]
+}
+  

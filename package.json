@@ -1,0 +1,98 @@
+{
+  "name": "safegram",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.4.2",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@jackwilsdon/craco-use-babelrc": "^1.0.0",
+    "@mui/icons-material": "^5.1.0",
+    "@mui/material": "^5.1.0",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/styled-engine-sc": "^5.1.0",
+    "@mui/system": "^5.1.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "redux-devtools-extension": "^2.13.9",
+    "styled-components": "^5.3.3"
+  },
+  "scripts": {
+    "start-react-scripts": "PORT=3500 react-scripts start",
+    "start": "PORT=3500 craco start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .tsx,.ts src",
+    "lint:fix": "eslint --ext .tsx,.ts --fix src",
+    "lint:prettier": "prettier --check \"src/**/*.tsx\" \"src/**/*.ts\"",
+    "fix:prettier": "prettier --write \"src/**/*.tsx\" \"src/**/*.ts\"",
+    "storybook": "start-storybook -p 6006 -s src",
+    "build-storybook": "build-storybook -s src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm lint",
+      "pre-push": "npm test"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/node-logger": "^6.3.12",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.12",
+    "@storybook/theming": "^6.4.7",
+    "@types/react": "^17.0.34",
+    "@types/react-router": "^5.1.17",
+    "@types/storybook-react-router": "^1.0.1",
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "babel-plugin-styled-components": "^2.0.2",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1",
+    "storybook-react-router": "^1.0.8",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "babel-loader": "8.1.0",
+    "webpack": "4.44.2",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
+  }
+}
